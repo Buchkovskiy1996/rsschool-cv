@@ -1,1 +1,128 @@
+html,
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+}
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Joan", serif;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__top {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(109, 151, 190);
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__item + .menu__item {
+  margin-left: 15px;
+}
+
+.menu__link {
+  color: #fff;
+  padding-bottom: 8px;
+  position: relative;
+  transition: all 1s;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid #ccc;
+}
+
+.main {
+  display: flex;
+  padding-top: 50px;
+}
+
+.main-text {
+  margin-right: 200px;
+  padding-top: 50px;
+}
+
+.main-title {
+  padding-bottom: 50px;
+  position: relative;
+  padding-left: 50px;
+}
+
+.main-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  left: 95px;
+  border-bottom: 3px solid rgb(109, 151, 190);
+  width: 175px;
+  height: 1px;
+}
