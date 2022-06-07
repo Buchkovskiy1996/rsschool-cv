@@ -43,7 +43,6 @@ ul[class] {
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 input,
@@ -62,7 +61,6 @@ a:hover {
 }
 
 body {
-  font-family: "Joan", serif;
   font-size: 16px;
   min-height: 100vh;
 }
@@ -100,20 +98,26 @@ body {
   border-bottom: 2px solid #ccc;
 }
 
-.main {
+.main__inner {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+  gap: 15px;
+}
+
+.img__main {
+  max-width: 340px;
+}
+
+.main__text {
   padding-top: 50px;
 }
 
-.main-text {
-  margin-right: 200px;
-  padding-top: 50px;
-}
-
-.main-title {
+.main__title {
   padding-bottom: 50px;
-  position: relative;
   padding-left: 50px;
+  position: relative;
 }
 
 .main-title::after {
@@ -121,8 +125,48 @@ body {
   display: block;
   position: absolute;
   bottom: 25px;
-  left: 95px;
+  left: 46px;
   border-bottom: 3px solid rgb(109, 151, 190);
-  width: 175px;
+  width: 50%;
   height: 1px;
+}
+
+.main__subtitle {
+  font-size: 24px;
+}
+
+.about__text {
+  padding-top: 15px;
+  max-width: 600px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%;
+  color: black;
+}
+
+.line {
+  padding-top: 15px;
+  border-bottom: 3px solid black;
+}
+
+.title__contacts {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.contacts__item {
+  padding-left: 20px;
+  position: relative;
+}
+
+.map__item::before {
+  content: "";
+  background-image: url(assets/icons/location-map.svg);
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
 }
