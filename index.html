@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>CV</title>
   </head>
@@ -17,9 +23,6 @@
                 <a class="menu__link" href="">CONTACTS</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">SUMMARY</a>
-              </li>
-              <li class="menu__item">
                 <a class="menu__link" href="">SKILLS</a>
               </li>
               <li class="menu__item">
@@ -27,9 +30,6 @@
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">PROJECTS</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">EDUCATION</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">ENGLISH</a>
@@ -71,7 +71,7 @@
           <li class="contacts__item map__item">Ukraine, Khmelnytsky</li>
           <li class="contacts__item email__item">
             Email:
-            <a
+            <a target="_blank"
               class="contacts__link"
               href="mailto:buchkovskiybogdan28061996@gmail.com"
               >buchkovskiybogdan28061996@gmail.com
@@ -79,18 +79,83 @@
           </li>
           <li class="contacts__item github__item">
             Github
-            <a class="contacts__link" href="Buchkovskiy1996"
+            <a target="_blank" class="contacts__link" href="https://github.com/Buchkovskiy1996"
               >Buchkovskiy1996
             </a>
           </li>
           <li class="contacts__item telegram__item">
             Telegram
-            <a class="contacts__link" href="https://telegram.me/Buchkovskiy"
+            <a target="_blank" class="contacts__link" href="https://telegram.me/Buchkovskiy"
               >@Buchkovskiy
             </a>
           </li>
         </ul>
+        <div class="line"></div>
       </div>
     </section>
+    <section class="skills">
+      <div class="container">
+        <h2 class="my__skills">skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <span>Web-development:</span> HTML5, CSS3, JavaScript
+          </li>
+          <li class="skills__item">
+            <span>Frameworks and libraries:</span> React
+          </li>
+          <li class="skills__item">
+            <span>Version control:</span> GIT, Github
+          </li>
+          <li class="skills__item"><span>Graphics:</span> Figma</li>
+        </ul>
+        <div class="line"></div>
+      </div>
+    </section>
+    <section class="courses">
+      <div class="container">
+          <h2 class="my__coursres">courses</h2>
+            <ul class="courses__list">
+              <li class="courses__item">
+                <span>Udemy:</span>Иван Петриченко:Web-разработчик 2021
+              </li>
+              <li class="courses__item"><span> rs school:</span> Stage 0</li>
+            </ul>
+            <div class="line"></div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title">PROJECTS</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="https://buchkovskiy1996.github.io/CoffeStyle.io/">CoffeStyle</a>
+          </li>
+        </ul>
+        <div class="line"></div>
+      </div>
+    </section>
+    <section class="english">
+      <div class="container">
+        <h2 class="english__title">
+          english
+        </h2>
+        <p class="emglish__text">A1 -Starter</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+<div class="footer__inner">
+  <div class="text__wrapper">
+    <p class="footer__text">© 2022 <a href="https://github.com/Buchkovskiy1996">Buchkovskiy1996</a></p>
+  </div>
+  <div class="footer__logo">
+   <a target="_blank" class="img__link"  href="https://rs.school/js/">
+    <img class="footer__img" src="assets/img/rs_school_js.svg" alt="rs_school">
+   </a>
+  </div>
+</div>
+      </div>
+    </footer>
   </body>
 </html>

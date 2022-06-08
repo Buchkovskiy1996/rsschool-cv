@@ -63,6 +63,8 @@ a:hover {
 body {
   font-size: 16px;
   min-height: 100vh;
+  color: #000;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -95,7 +97,8 @@ body {
 }
 
 .menu__link:hover {
-  border-bottom: 2px solid #ccc;
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: rgb(0, 0, 0);
 }
 
 .main__inner {
@@ -116,11 +119,11 @@ body {
 
 .main__title {
   padding-bottom: 50px;
-  padding-left: 50px;
+  padding-left: 85px;
   position: relative;
 }
 
-.main-title::after {
+.main__title::after {
   content: "";
   display: block;
   position: absolute;
@@ -149,24 +152,162 @@ body {
   border-bottom: 3px solid black;
 }
 
-.title__contacts {
+.contacts__item {
+  padding-left: 25px;
+  position: relative;
+}
+
+.contacts__item + .contacts__item {
+  margin-top: 20px;
+}
+
+.map__item::before {
+  content: "";
+  background-image: url(assets/icons/location-map.svg);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.email__item::before {
+  content: "";
+  background-image: url(assets/icons/email-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 18px;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.github__item::before {
+  content: "";
+  background-image: url(assets/icons/git-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: -2px;
+}
+
+.telegram__item::before {
+  content: "";
+  background-image: url(assets/icons/telegram-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 19px;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.contacts__link,
+.portfolio__link {
+  color: rgb(109, 151, 190);
+}
+.title__contacts,
+.my__skills,
+.my__coursres,
+.portfolio__title,
+.english__title {
   margin-top: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #ccc;
 }
 
-.contacts__item {
-  padding-left: 20px;
+.title__contacts:hover,
+.my__skills:hover,
+.my__coursres:hover,
+.portfolio__title:hover,
+.english__title:hover {
+  color: rgb(109, 151, 190);
+  -moz-transform: translate(0px, 1px) skew(-22deg, 0deg);
+  -webkit-transform: translate(0px, 1px) skew(-22deg, 0deg);
+  -o-transform: translate(0px, 1px) skew(-22deg, 0deg);
+  -ms-transform: translate(0px, 1px) skew(-22deg, 0deg);
+  transform: translate(0px, 1px) skew(-22deg, 0deg);
+}
+
+.skills__item + .skills__item,
+.courses__item + .courses__item {
+  margin-top: 20px;
+}
+
+.skills__item,
+.courses__item,
+.portfolio__item {
+  padding-left: 25px;
+  color: rgb(109, 151, 190);
   position: relative;
 }
 
-.map__item::before {
+.skills__item::before,
+.courses__item ::before {
   content: "";
-  background-image: url(assets/icons/location-map.svg);
-  height: 20px;
-  width: 20px;
   display: block;
   position: absolute;
+  background-image: url(assets/icons/list.svg);
+  width: 20px;
+  height: 20px;
   left: 0;
+}
+
+.skills__item span,
+.courses__item span {
+  color: #000;
+}
+
+.portfolio__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(assets/icons/coffe.svg);
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+
+.emglish__text {
+  padding-left: 19px;
+  font-size: 18px;
+  color: rgb(109, 151, 190);
+  position: relative;
+}
+
+.emglish__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(assets/icons/pen-svgrepo-com.svg);
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 3px;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 25px 0;
+  background-color: rgb(109, 151, 190);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text a {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer__img {
+  width: 150px;
 }
